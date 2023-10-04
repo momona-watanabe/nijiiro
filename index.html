@@ -6,6 +6,16 @@
   <title>Nijiiro_Preschool</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="./stylesheets/style.css" />
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'vdu2gpa',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 <body>
 
@@ -16,43 +26,80 @@
       <header>
         <div class="header_inner">
           <img src="./images/header_oval.png" class="header_oval">
-          <div class="header_ttl">
-            <p>認定こども園</p>
-            <img src="./images/logo.png">
-            <p>にじいろ幼稚園</p>
-          </div><!--/header_ttl-->
+          <a href="#">
+            <div class="header_ttl">
+              <p>認定こども園</p>
+              <img src="./images/logo.png">
+              <p>にじいろ幼稚園</p>
+            </div><!--/header_ttl-->
+          </a>
 
           <div class="header_menu">
             <ul class="header_list">
               <li>
-                <img src="./images/header_icon1.png" alt="">
-                <p>園の特色</p>
+                <a href="#">
+                  <img src="./images/header_icon1.png" alt="">
+                  <img src="./images/icon_after1.png" class="icon_after">
+                  <p>園の特色</p>
+                </a>
               </li>
               <li>
-                <img src="./images/header_icon2.png" alt="">
-                <p>入園案内</p>
+                <a href="#">
+                  <img src="./images/header_icon2.png" alt="">
+                  <img src="./images/icon_after2.png" class="icon_after">
+                  <p>入園案内</p>
+                </a>
               </li>
               <li>
-                <img src="./images/header_icon3.png" alt="">
-                <p>年間行事</p>
+                <a href="#">
+                  <img src="./images/header_icon3.png" alt="">
+                  <img src="./images/icon_after3.png" class="icon_after">
+                  <p>年間行事</p>
+                </a>
               </li>
               <li>
-                <img src="./images/header_icon4.png" alt="">
-                <p>にじフォト</p>
+                <a href="#">
+                  <img src="./images/header_icon4.png" alt="">
+                  <img src="./images/icon_after4.png" class="icon_after">
+                  <p>にじフォト</p>
+                </a>
               </li>
               <li>
-                <img src="./images/header_icon5.png" alt="">
-                <p>お問い合わせ</p>
+                <a href="#">
+                  <img src="./images/header_icon5.png" alt="">
+                  <img src="./images/icon_after5.png" class="icon_after">
+                  <p>お問い合わせ</p>
+                </a>
               </li>
             </ul>
           </div>
-
         </div><!--/header_inner-->
       </header>
 
 
+      <div id="firstview">
+        <div class="contents_inner">
+          <img src="./images/main1.png" class="firstview_img">
+          <div class="firstview_copy">
+            <h1>
+              <span>のびのび育つ</span>
+              <br>
+              <span>自由に未来を描く</span>
+              <br>
+              <span>みんなの色を育てよう</span>
+            </h1>
+          </div><!--/firstview_copy-->
+          <img src="./images/rainbow1.png" class="firstview_rainbow">
+        </div><!--/contents_inner-->
+
+        <div class="firstview_oval">
+          <img src="./images/main_oval.png" class="main_oval_left">
+          <img src="./images/main_oval.png" class="main_oval_right">
+        </div>
+      </div><!--/firstview-->
 
 
+    
     </div><!--/wrap_inner-->
   </div><!--/wrapper-->
 
