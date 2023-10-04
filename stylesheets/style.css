@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+/*共通*/
+
+body {
+  color: #262521;
+  /*
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  */
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 ul {
   list-style: none;
   margin-block-start: 0em;
@@ -9,11 +23,22 @@ ul {
   padding-inline-start: 0px;
 }
 
+a, p {
+  text-decoration: none;
+  color: #262521;
+}
+
+
+
+
+
+/*header*/
 .header_ttl {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -5%;
+  margin-top: -8%;
+  margin-left: 21px;
 }
 
 .header_ttl p {
@@ -42,8 +67,81 @@ ul {
   border-right: 2px solid #bbb1a7;
 }
 
+.header_list li >p {
+  letter-spacing: 0.9px;
+}
+
 .header_list img {
   height: 100px;
   width: auto;
   margin: 0 auto;
+  margin-top: -15px;
 }
+
+/*ホバー時アイコン切り替え*/
+.icon_after {
+  padding: 15px;
+  display: none;
+}
+
+
+
+/*firstview*/
+#firstview {
+  position: relative;
+  margin-top: 60px;
+}
+
+#firstview >.contents_inner {
+  position: relative;
+  z-index: 100;
+}
+
+.firstview_img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.firstview_copy {
+  position: absolute;
+  top: 10%;
+  left: 17%;
+}
+
+.firstview_copy h1 {
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 1.3px;
+}
+
+.firstview_copy span {
+  background-color: #fff;
+  padding: 9px 6px;
+}
+
+.firstview_rainbow {
+  width: 42%;
+  height: auto;
+  position: absolute;
+  bottom: -34%;
+  right: 0%;
+}
+
+.firstview_oval img{
+  position: absolute;
+  z-index: 1;
+}
+
+.main_oval_left {
+  width: 30%;
+  top: 0px;
+  left: 6%;
+}
+
+.main_oval_right {
+  width: 18%;
+  bottom: 7%;
+  right: 7%;
+}
+
