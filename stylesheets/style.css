@@ -28,7 +28,14 @@ a, p {
   color: #262521;
 }
 
+h2 {
+  color: #f08330;
+}
 
+.contents_block {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 
 
@@ -204,5 +211,4 @@ a, p {
   height: auto;
   margin-top: -100px;
 }
-
 
