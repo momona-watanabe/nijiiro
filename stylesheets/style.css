@@ -30,6 +30,9 @@ a, p {
 
 h2 {
   color: #f08330;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  line-height: 48px;
 }
 
 .contents_block {
@@ -163,8 +166,6 @@ h2 {
 .concept_letter h2 {
   display: flex;
   align-items: center;
-  font-size: 30px;
-  letter-spacing: 1.2px;
 }
 
 .concept_letter h2 >img {
@@ -212,3 +213,43 @@ h2 {
   margin-top: -100px;
 }
 
+
+
+.contents_rainbow {
+  width: 40%;
+  margin: 150px auto;
+}
+
+
+
+/*information*/
+#information>.contents_inner>.contents_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_oval {
+  display: flex;
+  position: relative;
+}
+
+.info_oval img:nth-child(1) {
+  width: 184px;
+  transform: rotate(25deg);
+}
+
+.info_oval img:nth-child(2) {
+  width: 208px;
+  transform: rotate(-25deg);
+  position: absolute;
+  right: 0;
+}
+
+.info_letter_block {
+  margin-top: 170px;
+}
+
+.info_letter_block p {
+  font-size: 20px;
+  line-height: 40px;
+}
