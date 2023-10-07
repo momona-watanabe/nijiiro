@@ -36,7 +36,7 @@ h2 {
 }
 
 .contents_block {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -195,7 +195,7 @@ h2 {
 }
 
 .concept_oval img:nth-child(1) {
-  width: 184px;
+  width: 185px;
   height: auto;
   transform: rotate(25deg);
 }
@@ -214,11 +214,11 @@ h2 {
 }
 
 
-
 .contents_rainbow {
   width: 40%;
   margin: 150px auto;
 }
+
 
 
 
@@ -230,26 +230,62 @@ h2 {
 
 .info_oval {
   display: flex;
-  position: relative;
+  position: absolute;
+  bottom: 15%;
 }
 
 .info_oval img:nth-child(1) {
-  width: 184px;
+  width: 185px;
   transform: rotate(25deg);
 }
 
 .info_oval img:nth-child(2) {
-  width: 208px;
+  width: 185px;
   transform: rotate(-25deg);
   position: absolute;
-  right: 0;
+  left: 120px;
+}
+
+.info_copy_block {
+  position: relative;
+  width: 40%;
 }
 
 .info_letter_block {
   margin-top: 170px;
+  width: 60%;
 }
 
 .info_letter_block p {
   font-size: 20px;
   line-height: 40px;
+}
+
+.info_img {
+  width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  margin: 50px 0px;
+}
+
+.info_letter {
+  margin: 0 auto;
+  width: 80%;
+  margin-left: 80px;
+}
+
+.info_btn {
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #f08330;
+  width: 220px;
+  border-radius: 30px;
+  padding: 4px 0;
+}
+
+.info_btn p {
+  color: #f08330;
+  font-size: 24px;
+  letter-spacing: 1.9px;
+  line-height: 48px;
 }
