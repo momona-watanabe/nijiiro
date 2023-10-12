@@ -480,13 +480,13 @@ footer {
 
 .footer_rainbow {
   width: 100%;
-  margin-left: -40px;
+  margin-left: -70px;
   margin-bottom: -20px;
 }
 
 .footer_background {
   width: 110%;
-  top: 110px;
+  top: 70px;
 }
 
 }
@@ -494,6 +494,19 @@ footer {
 
 
 @media screen and (max-width: 980px) {
+
+.firstview_img {
+  max-width: 94%;
+}
+
+.firstview_copy {
+  left: 12%;
+}
+
+.firstview_copy h1 {
+  font-size: 34px;
+  line-height: 55px;
+}
 
 .concept_letter h2 {
   justify-content: center;
@@ -581,5 +594,38 @@ footer {
   left: 10px;
 }
 
+.footer_inner {
+  top: 45%;
+  left: 5%;
+}
+
 
 }/*タブレット*/
+
+
+@media screen and (max-width: 768px) {
+
+.header_ttl p {
+  font-size: 28px;
+}
+
+.header_ttl >a {
+  margin-top: 0%;
+  margin-left: 0px;
+}
+
+.header_list {
+  display: none;
+}
+
+.firstview_copy {
+  left: 8%;
+}
+
+.firstview_copy h1 {
+  font-size: 28px;
+  line-height: 48px;
+}
+
+
+}
