@@ -541,7 +541,8 @@ footer {
 }
 
 .info_copy_block {
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
 .info_copy_block h2{
@@ -554,6 +555,11 @@ footer {
 
 .info_oval {
   z-index: -1;
+}
+
+.info_oval {
+  left: 50%;
+  margin-left: -185px;
 }
 
 .info_letter_block {
@@ -627,5 +633,26 @@ footer {
   line-height: 48px;
 }
 
+.news_illust >div:nth-child(1) {
+  width: 130px;
+}
+
+.news_illust >div:nth-child(4) {
+  width: 130px;
+}
+
+.footer_inner {
+  top: 30%;
+}
+
+.footer_list {
+  width: 400px;
+}
+
+.footer_list a {
+  margin-right: 40px;
+  margin-top: 25px;
+}
 
 }
+
