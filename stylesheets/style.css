@@ -489,7 +489,7 @@ footer {
   top: 70px;
 }
 
-}
+}/*max-width 1180px*/
 
 
 
@@ -506,6 +506,10 @@ footer {
 .firstview_copy h1 {
   font-size: 34px;
   line-height: 55px;
+}
+
+.header_list li {
+  width: 130px;
 }
 
 .concept_letter h2 {
@@ -604,9 +608,7 @@ footer {
   top: 45%;
   left: 5%;
 }
-
-
-}/*タブレット*/
+}/*max-width: 980px*/
 
 
 @media screen and (max-width: 768px) {
@@ -653,6 +655,141 @@ footer {
   margin-right: 40px;
   margin-top: 25px;
 }
+}/*max-width: 768px*/
+
+
+
+
+@media screen and (max-width: 550px) {
+
+h2 {
+  font-size: 26px;
+}
+
+#firstview {
+  margin-top: 30px;
+}
+
+.firstview_copy {
+  top: 100px;
+  left: 5%;
+}
+
+.firstview_copy h1 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.header_ttl p {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.header_ttl img {
+  width: 40px;
+  margin: 0 2px;
+}
+
+.concept_letter >p:nth-child(3) {
+  font-size: 18px;
+}
+
+.concept_oval img:nth-child(1) {
+  width: 145px;
+  margin-left: 20px;
+}
+
+.concept_oval img:nth-child(2) {
+  width: 170px;
+  right: 10px;
+}
+
+.contents_rainbow {
+  margin: 120px auto;
+}
+
+.info_copy_block h2 {
+  margin-left: 0px;
+}
+
+.info_letter_block p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.info_oval {
+  margin-left: -145px;
+}
+
+.info_oval img:nth-child(1) {
+  width: 155px;
+}
+
+.info_img {
+  width: 130%;
+  margin-left: -15%;
+}
+
+.info_btn {
+  width: 100%;
+  padding: 9px 0;
+}
+
+.news_ttl img {
+  width: 160px;
+  margin-left: -80px;
+}
+
+.news_illust >div:nth-child(1) {
+  width: 100px;
+}
+
+.news_illust >div:nth-child(2) {
+  top: 140px;
+  left: 15%;
+}
+
+.news_illust >div:nth-child(3) {
+  top: 130px;
+  right: 9%;
+}
+
+.news_illust >div:nth-child(4) {
+  width: 100px;
+}
+
+.news_illust >div:nth-child(6) {
+  bottom: 20px;
+  left: auto;
+  right: 20px;
 
 }
 
+.footer_inner {
+  top: 70%;
+}
+
+.footer_rainbow {
+  margin-left: -20px;
+  margin-bottom: 10px;
+}
+
+.footer_background {
+  top: 20px;
+}
+
+.footer_ttl p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.footer_ttl img {
+  width: 40px;
+  margin: 0 2px;
+}
+
+.footer_list {
+  display: none;
+}
+}
