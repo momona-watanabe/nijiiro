@@ -21,54 +21,89 @@
 
 
   <div class="wrapper">
+
+    <!--LOADING-->
+    <div id="loading">
+      <div class="load_inner">
+        <div class="load_copy">
+          <img src="./images/load_letter1.png">
+          <img src="./images/load_letter2.png">
+          <img src="./images/load_letter3.png">
+          <img src="./images/load_letter4.png">
+          <img src="./images/load_letter5.png">
+          <img src="./images/load_letter6.png">
+          <img src="./images/load_letter7.png">
+          <img src="./images/load_letter8.png">
+          <img src="./images/load_letter9.png">
+        </div>
+      </div>
+    </div>
+
+
+
+
     <div class="wrap_inner">
 
+      <!--HEADER-->
       <header>
         <div class="header_inner">
           <img src="./images/header_oval.png" class="header_oval">
-          
-            <div class="header_ttl">
-              <a href="#">
-                <p>認定こども園</p>
-                <img src="./images/logo.png">
-                <p>にじいろ幼稚園</p>
-              </a>
-            </div><!--/header_ttl-->
-          
+          <div class="openbtn"><span></span><span></span><span></span></div>
+          <nav id="g-nav">
+            <ul>
+            <li><a href="#">HOME</a></li>  
+            <li><a href="#">園の特色</a></li>  
+            <li><a href="#">年間行事</a></li>  
+            <li><a href="#">入園案内</a></li>  
+            <li><a href="#">にじフォト</a></li>  
+            <li><a href="#">アクセス</a></li>  
+            <li><a href="#">Q&A</a></li>  
+            <li><a href="#">お問い合わせ</a></li>  
+            </ul>
+          </nav>
+          <div class="circle-bg"></div>
 
+          <div class="header_ttl">
+            <a href="#">
+              <p>認定こども園</p>
+              <img src="./images/logo.png">
+              <p>にじいろ幼稚園</p>
+            </a>
+          </div><!--/header_ttl-->
+          
           <div class="header_menu">
             <ul class="header_list">
               <li>
                 <a href="#">
-                  <img src="./images/header_icon1.png" alt="">
+                  <img src="./images/header_icon1.png" class="icon_before">
                   <img src="./images/icon_after1.png" class="icon_after">
                   <p>園の特色</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/header_icon2.png" alt="">
+                  <img src="./images/header_icon2.png" class="icon_before">
                   <img src="./images/icon_after2.png" class="icon_after">
                   <p>入園案内</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/header_icon3.png" alt="">
+                  <img src="./images/header_icon3.png" class="icon_before">
                   <img src="./images/icon_after3.png" class="icon_after">
                   <p>年間行事</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/header_icon4.png" alt="">
+                  <img src="./images/header_icon4.png" class="icon_before">
                   <img src="./images/icon_after4.png" class="icon_after">
                   <p>にじフォト</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/header_icon5.png" alt="">
+                  <img src="./images/header_icon5.png" class="icon_before">
                   <img src="./images/icon_after5.png" class="icon_after">
                   <p>お問い合わせ</p>
                 </a>
@@ -79,6 +114,7 @@
       </header>
 
 
+      <!--FIRSTVIEW-->
       <div id="firstview">
         <div class="contents_inner">
           <img src="./images/main1.png" class="firstview_img">
@@ -101,6 +137,7 @@
       </div><!--/firstview-->
 
 
+      <!--CONCEPT-->
       <div id="concept">
         <div class="contents_inner">
           <div class="contents_block">
@@ -123,7 +160,6 @@
                 思いやりと優しさを育みます。
               </p>
             </div>
-
             <div class="concept_images">
               <div class="concept_oval">
                 <img src="./images/oval1.png">
@@ -141,6 +177,7 @@
       </div>
 
 
+      <!--INFORMATION-->
       <div id="information">
         <div class="contents_inner">
           <div class="contents_block">
@@ -167,16 +204,20 @@
                   <br>
                   助け合い、思いやりと優しさを育みます。
                   <br>
-                  また、複数の職員と看護師が在中している為、
+                  また、複数の職員と看護師が在中している為
                   <br>
                   安心して園での生活を送っていただけます。
                 </p>
               </div>
+              
               <div class="info_img">
-                <span>
-                  <img src="./images/information.jpg">
-                </span>
+                <a href="#">
+                  <span>
+                    <img src="./images/information.jpg">
+                  </span>
+                </a>
               </div>
+
               <div class="info_btn">
                 <a href="#">
                   <p>入園案内 →</p>
@@ -188,6 +229,7 @@
       </div><!--/information-->
 
 
+      <!--NEWS-->
       <div id="news">
         <div class="contents_inner">
           <div class="contents_block">
@@ -298,6 +340,7 @@
       </div><!--/news-->
 
 
+      <!--FOOTER-->
       <footer>
         <img src="./images/rainbow3.png" class="footer_rainbow">
         <div class="footer_background"></div>
@@ -341,5 +384,10 @@
   </div><!--/wrapper-->
 
 
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
