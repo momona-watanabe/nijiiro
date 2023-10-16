@@ -42,24 +42,26 @@
 
     <div class="wrap_inner">
 
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      <nav id="g-nav">
+        <ul>
+        <li><a href="#">HOME</a></li>  
+        <li><a href="#">園の特色</a></li>  
+        <li><a href="#">年間行事</a></li>  
+        <li><a href="#">入園案内</a></li>  
+        <li><a href="#">にじフォト</a></li>  
+        <li><a href="#">アクセス</a></li>  
+        <li><a href="#">Q&A</a></li>  
+        <li><a href="#">お問い合わせ</a></li>  
+        </ul>
+      </nav>
+      <div class="circle-bg"></div>
+
       <!--HEADER-->
-      <header>
+      <header id="header" class="DownMove">
         <div class="header_inner">
           <img src="./images/header_oval.png" class="header_oval">
-          <div class="openbtn"><span></span><span></span><span></span></div>
-          <nav id="g-nav">
-            <ul>
-            <li><a href="#">HOME</a></li>  
-            <li><a href="#">園の特色</a></li>  
-            <li><a href="#">年間行事</a></li>  
-            <li><a href="#">入園案内</a></li>  
-            <li><a href="#">にじフォト</a></li>  
-            <li><a href="#">アクセス</a></li>  
-            <li><a href="#">Q&A</a></li>  
-            <li><a href="#">お問い合わせ</a></li>  
-            </ul>
-          </nav>
-          <div class="circle-bg"></div>
+
 
           <div class="header_ttl">
             <a href="#">
@@ -114,7 +116,7 @@
 
 
       <!--FIRSTVIEW-->
-      <div id="firstview">
+      <div id="firstview" class="inview_re fadeIn">
         <div class="contents_inner">
 
           <div class="mask">
@@ -168,7 +170,7 @@
 
 
       <!--CONCEPT-->
-      <div id="concept">
+      <div id="concept" class="inview_re fadeIn">
         <div class="contents_inner">
           <div class="contents_block">
             <div class="concept_letter">
@@ -191,9 +193,9 @@
               </p>
             </div>
             <div class="concept_images">
-              <div class="concept_oval">
-                <img src="./images/oval1.png">
-                <img src="./images/oval2.png">
+              <div class="concept_oval rotate_animation">
+                <img src="./images/oval1.png" class="rotate_anime1">
+                <img src="./images/oval2.png" class="rotate_anime2">
               </div>
               <img src="./images/concept.png" class="concept_img" >
             </div><!--/concept_images-->
@@ -202,13 +204,13 @@
       </div><!--/concept-->
 
 
-      <div class="contents_rainbow">
+      <div class="contents_rainbow inview_re fadeIn">
         <img src="./images/rainbow2.png">
       </div>
 
 
       <!--INFORMATION-->
-      <div id="information">
+      <div id="information" class="inview_re fadeIn">
         <div class="contents_inner">
           <div class="contents_block">
             <div class="info_copy_block">
@@ -219,9 +221,9 @@
                 <br>
                 みなさんに寄り添います。
               </h2>
-              <div class="info_oval">
-                <img src="./images/oval3.png">
-                <img src="./images/oval1.png">
+              <div class="info_oval rotate_animation">
+                <img src="./images/oval3.png" class="rotate_anime1">
+                <img src="./images/oval1.png" class="rotate_anime2">
               </div>
             </div><!--/info_copy_block-->
 
@@ -260,7 +262,7 @@
 
 
       <!--NEWS-->
-      <div id="news">
+      <div id="news" class="inview_re fadeIn">
         <div class="contents_inner">
           <div class="contents_block">
             <div class="news_ttl">
@@ -371,7 +373,7 @@
 
 
       <!--FOOTER-->
-      <footer>
+      <footer class="inview_re fadeIn">
         <img src="./images/rainbow3.png" class="footer_rainbow">
         <div class="footer_background"></div>
           <div class="footer_inner">
@@ -412,9 +414,11 @@
 
     </div><!--/wrap_inner-->
   </div><!--/wrapper-->
-
-
+  
+  
+  
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="js/jquery.inview.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
