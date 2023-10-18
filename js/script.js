@@ -43,7 +43,7 @@ $(function(){
 function sclollAnime1(){
 
   $('.rotate_animation').each(function(){ 
-    var elemPos = $(this).offset().top-50;
+    var elemPos = $(this).offset().top+90;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
@@ -63,25 +63,17 @@ function sclollAnime1(){
 
 
 
-  var beforePos = 0;
-  
-  function ScrollAnime() {
-      var elemTop = $('#firstview').offset().top;
-    var scroll = $(window).scrollTop();
-      if(scroll == beforePos) {
-      }else if(elemTop > scroll || 0 > scroll - beforePos){
-      //ヘッダーが上から出現する
-      $('#header').removeClass('UpMove');
-      $('#header').addClass('DownMove');
-      }else {
-      //ヘッダーが上に消える
-          $('#header').removeClass('DownMove');
-      $('#header').addClass('UpMove');
-      }
-      
-      beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納
-  }
-  
-  $(window).scroll(function () {
-    ScrollAnime();
-  });
+//スクロールすると上部に固定
+function FixedAnime() {
+　　　　var headerH = $('#header').outerHeight(true);
+　　　　var scroll = $(window).scrollTop();
+　　　　if (scroll >= headerH){
+　　　　$('.header_menu').addClass('fixed');
+　　　　}else{
+　　　　$('.header_menu').removeClass('fixed');
+　　　　}
+}
+
+$(window).scroll(function () {
+FixedAnime();
+});
