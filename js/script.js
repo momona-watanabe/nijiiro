@@ -65,7 +65,7 @@ function sclollAnime1(){
 
 //スクロールすると上部に固定
 function FixedAnime() {
-　　　　var headerH = $('#header').outerHeight(true);
+　　　　var headerH = $('.header_menu').outerHeight(true);
 　　　　var scroll = $(window).scrollTop();
 　　　　if (scroll >= headerH){
 　　　　$('.header_menu').addClass('fixed');
@@ -76,4 +76,56 @@ function FixedAnime() {
 
 $(window).scroll(function () {
 FixedAnime();
+});
+
+
+
+//news スライダー
+$('.slider').slick({
+  mobileFirst: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 6900,
+  infinite: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  cssEase: 'linear',
+  slidesToShow: 3.5,
+  slidesToScroll: 1,
+  responsive: [ 
+    {
+      breakpoint: 1040,
+      settings: 'unslick'
+    },
+    {
+      breakpoint:830,
+      settings:{
+        slidesToShow:3,
+      }
+    },
+    {
+      breakpoint:700,
+      settings:{
+        slidesToShow:2.5,
+      }
+    },
+    {
+      breakpoint:500,
+      settings:{
+        slidesToShow:2,
+      }
+    },
+    {
+      breakpoint:300,
+      settings:{
+        slidesToShow:1.5,
+      }
+    }
+  ]
+  });
+
+//リサイズした時に実行
+$(window).on('resize orientationchange', function() {
+    $('.slider').slick('resize');
 });
