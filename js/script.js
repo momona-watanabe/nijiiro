@@ -67,7 +67,7 @@ function sclollAnime1(){
 function FixedAnime() {
 　　　　var headerH = $('.header_menu').outerHeight(true);
 　　　　var scroll = $(window).scrollTop();
-　　　　if (scroll >= headerH){
+　　　　if (scroll >= headerH +30){
 　　　　$('.header_menu').addClass('fixed');
 　　　　}else{
 　　　　$('.header_menu').removeClass('fixed');
