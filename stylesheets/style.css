@@ -4,9 +4,6 @@
 
 body {
   color: #333;
-  /*
-  font-weight: 400;
-  */
   font-family: "fot-tsukuardgothic-std", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -41,13 +38,12 @@ h2 {
 
 
 
-
-
 /*header*/
 .header_menu {
   margin: 0 auto;
   width: 100%;
   transition: all 1.5s;
+  padding-top: 30px;
 }
 
 .openbtn {
@@ -76,7 +72,6 @@ h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 30px;
 }
 
 .header_list li {
@@ -98,8 +93,6 @@ h2 {
   margin: 0 auto;
   margin-top: -15px;
 }
-
-
 
 
 
@@ -148,8 +141,6 @@ h2 {
   bottom: -15%;
   right: 0%;
 }
-
-
 
 
 
@@ -232,7 +223,6 @@ h2 {
 
 
 
-
 /*information*/
 #information>.contents_inner>.contents_block {
   display: flex;
@@ -254,10 +244,6 @@ h2 {
   position: absolute;
   left: 120px;
 }
-
-
-
-
 
 .info_copy_block {
   position: relative;
@@ -528,6 +514,11 @@ footer {
   z-index: 999;
   top:0;
   left:0;
+  transition: all 0.5s;
+}
+
+.header_menu {
+  transition: all 0.5s;
 }
 
 .header_menu.fixed .header_list img{
@@ -536,6 +527,7 @@ footer {
 .header_menu.fixed .header_list img:nth-child(2){
   padding: 11px;
 }
+
 
 /*header ハンバーガーメニュー*/
 /*ボタン*/
@@ -874,6 +866,7 @@ body.appear .wrap_inner{
 
 
 
+
 /*Inview*/
 .fadeIn {
   opacity: 0;
@@ -887,26 +880,7 @@ body.appear .wrap_inner{
 
 
 
-/*
-.firstview_oval img{
-  position: absolute;
-  z-index: 1;
-}
-
-.main_oval_left {
-  width: 30%;
-  top: 0px;
-  left: 6%;
-}
-
-.main_oval_right {
-  width: 18%;
-  bottom: 7%;
-  right: 7%;
-}
-*/
-
-
+/*fiestview oval anime*/
 .firstview_oval div{
   position: absolute;
   z-index: 1;
@@ -928,7 +902,6 @@ body.appear .wrap_inner{
   transform: rotate(100deg);
 }
 
-/*fiestview oval anime*/
 .fluid {
   background:#E4CCDD;/*背景色*/
   opacity: 50%;
@@ -959,6 +932,10 @@ body.appear .wrap_inner{
     border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
 }
 }
+
+
+
+
 
 /*news_illust anime*/
 @keyframes fuwafuwa1 {
@@ -993,6 +970,8 @@ body.appear .wrap_inner{
 
 
 
+
+
 /* レスポンシブ 
 ----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------- */
@@ -1018,7 +997,8 @@ body.appear .wrap_inner{
   bottom: 30%;
   right: 0%;
 }
-}
+}/*max-width: 1250px*/
+
 
 @media screen and (max-width: 1180px) {
 
@@ -1177,7 +1157,7 @@ body.appear .wrap_inner{
 .firstview_rainbow {
   bottom: -50px;
 }
-}
+}/*max-width: 900px*/
 
 
 @media screen and (max-width: 768px) {
@@ -1247,7 +1227,7 @@ body.appear .wrap_inner{
 .mask_svg path {
   transform: translate3d(50%,46%,0) scale(3.3,2.2)rotate(-54deg);
 }
-}
+}/*max-width: 640px*/
 
 
 @media screen and (max-width: 550px) {
@@ -1343,8 +1323,6 @@ h2 {
 .info_copy_block h2 {
   margin-left: 0px;
 }
-
-
 
 .info_letter_block p {
   font-size: 16px;
@@ -1454,7 +1432,9 @@ h2 {
 #concept {
   margin-top: 30px;
 }
-}
+}/*max-width: 460px*/
+
+
 
 
 
